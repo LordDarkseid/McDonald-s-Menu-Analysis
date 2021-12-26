@@ -41,7 +41,7 @@ try:
 except:
     print ("Unable to connect: ", ibm_db.conn_errormsg() )
     
-conn = ibm_db.connect(dsn,"hcm72360","w8NrsEhXkc3plex5")
+conn = ibm_db.connect(dsn,"********","****************")
 pconn = ibm_db_dbi.Connection(conn)
 df = pd.read_sql("Select * from MCD_MENU",pconn)
 
